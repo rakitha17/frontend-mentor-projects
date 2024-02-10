@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rakitha Abeykoon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" media="(min-width: 800px)" href="./css/desktop_style.css">
+  <link rel="stylesheet" media="(max-width: 790px)" href="./css/mobile_style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <!-- MAIN -->
+  <main class="container">
+    <!-- CONTENT BOX -->
+    <div class="container--content_box">
+      <!-- TITLE AREA -->
+      <div class="content_box--title_area">
+        <div id="_notifications_num">
+          <h2>Notifications</h2>
+          <input type="button" id="notification_btn" name= "msg-number" value="3">
+        </div>
+        <div id="notification_text">Mark all as read</div>
+      </div>
+      <!-- NOTIFICATION AREA -->
+      <div class="content_box--notification_area">
+        <!-- INSIDE NOTIFICATION AREA -->
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area">
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-mark-webber.webp" alt="webber"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Mark Webber</a>
+                    <span id="reaction">reacted to your recent post</span>
+                    <a href="#" id="thing" target="_blank">My first tournament today!</a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">1m ago</div>
+              </div>
+            </div>
+            <div class="post"></div>
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area"> 
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-angela-gray.webp" alt="gray"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Angela Gray</a>
+                    <span id="reaction">followed you</span>
+                    <a href="#" id="thing"></a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">5m ago</div>
+              </div>
+            </div>
+            <div class="post"></div>
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area">           
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-jacob-thompson.webp" alt="jacob"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Jacob Thompson</a>
+                    <span id="reaction">has joined your group</span>
+                    <a href="#" id="group" target="_blank">Chess Club</a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">1 day ago</div>
+              </div>   
+            </div>
+            <div class="post"></div>           
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area">
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="rizky"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Rizky Hasanuddin</a>
+                    <span id="reaction">sent you a private message</span>
+                    <a href="#" id="thing"></a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">5 days ago</div>
+              </div>
+            </div>
+            <div class="post"></div>      
+          </div>
+          <div class="message_box--detail_area">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area">   
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-kimberly-smith.webp" alt="smith"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Kimberly Smith</a>
+                    <span id="reaction">commented on your picture</span>
+                    <a href="#" id="thing"></a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">1 week ago</div>
+              </div>   
+            </div>
+            <div class="post"><a href="#" target="_blank"><img src="/assets/images/image-chess.webp" alt=""></a></div>   
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area"> 
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-nathan-peterson.webp" alt="peterson"></div>
+              <div class="info--status">
+                <div class="div_description"> 
+                  <p>
+                    <a href="#" id="profile" target="_blank">Nathan Peterson</a>
+                    <span id="reaction">reacted to your recent post</span>
+                    <a href="#" id="thing" target="_blank">5 end-game strategies to increase your win rate</a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">2 weeks ago</div>
+              </div>
+            </div>
+            <div class="post"></div>     
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+        <div class="notification_area--message_box">
+          <!-- INSIDE MESSAGE BOX -->
+          <div class="message_box--name_area">
+            <div class="info">
+              <div class="avatar"><img src="/assets/images/avatar-anna-kim.webp" alt="kim"></div>
+              <div class="info--status">
+                <div class="div_description">
+                  <p>
+                    <a href="#" id="profile" target="_blank">Anna Kim</a>
+                    <span id="reaction">left the group</span>
+                    <a href="#" id="group" target="_blank">Chess Club</a>
+                    <span id="dot"></span>
+                  </p>
+                </div>
+                <div class="info--duration">2 weeks ago</div>
+              </div> 
+            </div>
+            <div class="post"></div>
+          </div>
+          <div class="message_box--detail_area"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./js/script.js"></script>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

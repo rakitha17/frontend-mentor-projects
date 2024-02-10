@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" media="(min-width: 800px)" href="./css/desktop.css">
+
+  <title>Expenses chart component</title>
+
+</head>
+<body>
+  <!-- UPPER BOX -->
+  <div class="upper-box">
+    <p id="balance">My balance</p>
+    <h1 id="amount"></h1>
+    <img src="./assets/logo.svg" id="logo" alt="The Logo">
+  </div>
+  <!-- LOWER BOX -->
+  <div class="lower-box">
+    <!-- HEADER -->
+    <div class="header">
+      <h1 id="topic">Spending - Last 7 days</h1>
+    </div>
+    <!-- CHART -->
+    <div class="chart-container">
+      <canvas id="chartGraph"></canvas>
+    </div>
+    <!-- FOOTER -->
+    <div class="monthly-amount">
+      <div class="total-info">
+        <p id="total-text">Total this month</p>
+        <h1 id="total-amount"></h1>
+      </div>
+      <div class="remainder-info">
+        <p id="remainder-percent">+2.4%</p>
+        <p id="remainder-text">from last month</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <script src="./js/script.js" type="text/javascript"></script>
+
+<!--
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <!-- CHART GRAPH PLACEHOLDER-->
+  <!--     <div class="chart-graph">
+      <ul class="bar-collection">
+        <li>          
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">mon</span>
+        </li>
+        <li>
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">tue</span>
+        </li>
+        <li>
+          <div class="bar">
+              <div class="bar-amount"></div>
+          </div>
+          <span class="day">wed</span>
+        </li>
+        <li>
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">thu</span>
+        </li>
+        <li>
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">fri</span>
+        </li>
+        <li>
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">sat</span>
+        </li>
+        <li>
+          <div class="bar">
+            <div class="bar-amount"></div>
+          </div>
+          <span class="day">sun</span>
+        </li>
+      </ul>
+    </div> -->
+</body>
+</html>

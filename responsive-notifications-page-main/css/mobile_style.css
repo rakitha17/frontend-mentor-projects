@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+:root{
+  --message_box-dot: #F65351;
+  --message_box-cursorPointer: #0A317B;
+  --container: #fff;
+  --body: #F7FAFD;
+  --message_box: #E5EFFA;
+  --message_box-detail_area: #DDE7EE;
+  --message_box-text1: #939DAE;
+  --message_box-text2: #5E6778;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--body);
+}
+
+  /* MAIN CONTAINER */
+
+  .container{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+        /* CONTENT BOX */
+
+        .container--content_box{
+          width: 85%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-between; */
+          align-items: flex-start;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+            /* TITLE AREA */
+
+            .content_box--title_area{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 30px;
+            }
+
+                .content_box--title_area #_notifications_num{
+                  width: 190px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                }
+            
+                    .content_box--title_area #_notifications_num #notification_btn{
+                      width: 30px;
+                      height: 25px;
+                      border: none;
+                      border-radius: 5px;
+                      background-color: var(--message_box-cursorPointer);
+                      font-family: 'Plus Jakarta Sans', sans-serif;
+                      font-size: 12px;
+                      font-weight: 800;
+                      color: #fff;
+                      cursor: pointer;
+                    }
+
+                .content_box--title_area #notification_text{
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: var(--message_box-text2);
+                  cursor: pointer;
+                }
+                  .content_box--title_area #notification_text:hover{
+                    color: var(--message_box-cursorPointer);
+                  }
+
+
+          /* NOTIFICATION AREA */      
+          
+          .content_box--notification_area{
+            overflow: hidden;
+            overflow-y: scroll;
+          }
+
+              .notification_area--message_box{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                font-size: 12px;
+              }
+
+                  .message_box--name_area{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+                    background-color: var(--body);
+                    border-radius: 10px;
+                  }
+
+                      .message_box--name_area .info{
+                        width: 90%;
+                        display: flex;
+                        flex-direction: row;
+                      }
+
+                          .info .avatar{
+                            position: relative;
+                            min-width: 50px;
+                            min-height: 50px;
+                            border-radius: 100%;
+                            margin-right: 20px;
+                          }
+
+                              .info .avatar img{
+                                position: absolute;
+                                width: 100%;
+                              }
+
+
+                          .info .info--status{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                          }
+
+                              .info--status .div_description{
+                                width: 100%;
+                                margin-bottom: 5px;
+                              }
+
+                                  .info--status .div_description p{
+                                    display: block;
+                                  }
+
+                                      .info--status .div_description p a, span{
+                                        margin-right: 10px;
+                                        text-decoration: none;
+                                      }
+
+                                      .info--status .div_description p #profile{
+                                        color: #000;
+                                        font-weight: 800;
+                                      }
+                                        .info--status .div_description p #profile:hover{
+                                          color: var(--message_box-cursorPointer);
+                                        }
+
+                                      .info--status .div_description p #reaction{
+                                        color: var(--message_box-text2);
+                                        font-weight: 500;
+                                        cursor: default;
+                                      }
+                                      
+                                      .info--status .div_description p #thing{
+                                        color: var(--message_box-text2);
+                                        font-weight: 800;
+                                      }
+                                        .info--status .div_description p #thing:hover{
+                                          color: var(--message_box-cursorPointer);
+                                        }
+
+                                      .info--status .div_description p #group{
+                                        color: var(--message_box-text2);
+                                        font-weight: 800;
+                                      }
+                                        .info--status .div_description p #group:hover{
+                                          color: var(--message_box-cursorPointer);
+                                        }
+
+                                      .info--status .div_description p #dot {
+                                        display: inline-block;
+                                        width: 10px;
+                                        height: 10px;
+                                        background-color: var(--message_box-dot);
+                                        border-radius: 100%;
+                                      }
+
+                                  .info--status .info--duration{
+                                    color: var(--message_box-text1);
+                                  }
+
+                          .message_box--name_area .post{
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 5px;
+                          }
+            
+                              .message_box--name_area .post img{
+                                position: absolute;
+                                width: 100%;
+                              }
+            
+                          .message_box--detail_area{
+                            padding: 20px;
+                            background-color: #fff;
+                            border: 1px solid var(--message_box-detail_area);
+                            border-radius: 5px;
+                            width: 80%;
+                            align-self: end;
+                            margin-right: 20px;
+                            display: none;
+                            color: var(--message_box-text2);
+                            font-weight: 500;
+                            cursor: pointer;
+                          }
+                            .message_box--detail_area:hover{
+                              background-color: var(--message_box-detail_area);
+                            }
